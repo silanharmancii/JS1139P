@@ -11,8 +11,8 @@
 
     <div class="row-big">
         <div class="col-3 p-2 col-a-team border border-warning mx-1 rounded ">
-            <h2 class="text-center">A Takımı</h2>
-            <h3 class="text-center score-a"></h3>
+            <h2 class="text-center "id="nameA">A Takımı</h2>
+            <h3 class="text-center score-a" id="score-a">Skor: 0</h3>
             <div class="row mb-2 mt-5">
                 <button class="col-3 btn btn-success mx-1" onclick="addFunctionA()">Ekle</button>
                 <button class="col-3 btn btn-danger mx-1" onclick="subtractFunctionA()">Çıkar</button>
@@ -23,15 +23,15 @@
             </div>
         </div>
         <div class="col-3 p-2 col-b-team border border-warning mx-1 rounded ">
-            <h2 class="text-center">B Takımı</h2>
-            <h3 class="text-center score-b"></h3>
+            <h2 class="text-center" id="nameB">B Takımı</h2>
+            <h3 class="text-center score-b" id="score-b">Skor: 0</h3>
             <div class="row mb-2 mt-5">
-                <button class="col-3 btn btn-success mx-1">Ekle</button>
-                <button class="col-3 btn btn-danger mx-1">Çıkar</button>
+                <button class="col-3 btn btn-success mx-1" onclick="addFunctionB()">Ekle</button>
+                <button class="col-3 btn btn-danger mx-1"  onclick="subtractFunctionB()">Çıkar</button>
             </div>
             <div class="row mb-5 ">
-                <button class="col-4 btn btn-primary mx-1">Skor Güncelle</button>
-                <button class="col-4 btn btn-info mx-1">İsim Güncelle</button>
+                <button class="col-4 btn btn-primary mx-1" onclick="updateScoreB()">Skor Güncelle</button>
+                <button class="col-4 btn btn-info mx-1" onclick="updateNameB()">İsim Güncelle</button>
             </div>
             
         </div>
